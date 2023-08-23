@@ -64,9 +64,11 @@ body {
 	/*border: none;*/
 	transition: transform 0.3s;
 }
-
 .card:hover {
 	/*transform: translateY(-10px);*/
+}
+.card-text {
+	text-align: justify;
 }
 
 body .page_start {
