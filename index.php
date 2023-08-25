@@ -1,3 +1,4 @@
+<?php ini_set('default_charset', "utf-8"); define('ACCESS_TOKEN', strtotime('2023-08-25 15:00:00')); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +25,7 @@
 	<link rel="stylesheet" href="bootstrap_5.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 	<link rel="stylesheet" href="fancybox/fancybox.css">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style.css?<?php echo ACCESS_TOKEN; ?>">
 
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -32,14 +33,14 @@
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DYXR3942GY"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 
-		gtag('config', '');
+		gtag('config', 'G-DYXR3942GY');
 	</script>
 </head>
 <body>
@@ -466,10 +467,18 @@
 	</div>
 </footer>
 
+<script type="text/javascript">
+	var locale = 'fr-FR';
+	var timeZone = 'Europe/Paris';
+	var currency = 'EUR';
+</script>
+
 <!-- Liens vers les fichiers JavaScript de Bootstrap et jQuery -->
 <script src="bootstrap_5.3.1/js/bootstrap.bundle.min.js"></script>
 <script src="jquery_3.7.0/jquery-3.7.0.min.js"></script>
 <script src="fancybox/fancybox.umd.js"></script>
-<script src="app.js"></script>
+
+<script src="app.js?<?php echo ACCESS_TOKEN; ?>"></script>
+
 </body>
 </html>
