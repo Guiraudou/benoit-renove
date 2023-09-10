@@ -6,8 +6,8 @@
 
 	<!-- title / desc / keywords-->
 	<title>Benoit Rénove - Bricolage et Rénovation</title>
-	<meta name="description" content="" />
-	<meta name="keywords" content="renovation maison appartement cuisine béziers" />
+	<meta name="description" content="Prestation en rénovation intérieur de l'habitat : conception/montage de cuisine, pose de parquet et carrelage, enduit/peinture, création de dressing, rénovation de salle de bain, modifications/installations électriques, création de cloisons, isolation de pièce..." />
+	<meta name="keywords" content="renovation maison appartement cuisine béziers isolation placo peinture parquet carrelage électricité plomberie" />
 
 	<!-- robots -->
 	<meta name="robots" content="all" />
@@ -81,7 +81,7 @@
 			<img src="images/logo.png" alt="Logo Benoit Rénove" class="img-fluid mb-4" width="150">
 			<!--<h1 class="display-4 mb-2">Bienvenue chez Benoit Rénove</h1>-->
 			<h1 class="display-4 mb-2">Benoit Rénove - Béziers</h1>
-			<p class="lead mb-4">Votre partenaire pour tous vos projets de rénovation sur Béziers et alentours.</p>
+			<p class="lead mb-5"><strong>Votre partenaire pour vos projets de rénovation sur Béziers et alentours.</strong></p>
 			<a href="#contact" class="btn btn-primary btn-lg mt-4">Me contacter</a>
 		</div>
 		<!-- Image d'illustration pour la page principale -->
