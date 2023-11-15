@@ -132,7 +132,7 @@ body .page_start {
 	height: 40px; /* Ajustez la taille du rond en fonction de vos besoins */
 	border-radius: 50%;
 	background-color: white;
-	padding: 5px; /* Espace entre le logo et le rond blanc */
+	padding: 0px 5px 5px 5px; /* Espace entre le logo et le rond blanc */
 	margin-right: 10px; /* Espace entre le rond blanc et le texte */
 	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Ombre légère autour du rond */
 }
