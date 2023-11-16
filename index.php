@@ -1,4 +1,19 @@
-<?php ini_set('default_charset', "utf-8"); define('ACCESS_TOKEN', strtotime('2023-11-15 15:00:00')); ?>
+<?php
+
+const COMPANY_NAME = 'Benoit Guiraudou';
+const PHONE_NUMBER = '+33689386801';
+const EMAIL = 'contact@benoit-renove.fr';
+const POSTAL_ADDRESS = '24 avenue des Platanes — 34310 Montady — France';
+const SIRET = '809 644 941 00027';
+const LOCALE = 'fr-FR';
+const TIMEZONE = 'Europe/Paris';
+const CURRENCY = 'EUR';
+
+date_default_timezone_set(TIMEZONE);
+ini_set('default_charset', "utf-8");
+define('ACCESS_TOKEN', strtotime('2023-11-16 11:00:00'));
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +39,7 @@
 
 	<link rel="stylesheet" href="bootstrap_5.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-	<link rel="stylesheet" href="fancybox/fancybox.css">
+	<link rel="stylesheet" href="fancybox_4.0.26/fancybox.css">
 	<link rel="stylesheet" href="image-compare-viewer_1.6.2/image-compare-viewer.min.css">
 	<link rel="stylesheet" href="style.css?<?php echo ACCESS_TOKEN; ?>">
 
@@ -148,7 +163,7 @@
 					</div>
 					<div class="card-body">
 						<h5 class="card-title text-center">Création de Dressing</h5>
-						<p class="card-text">Optimisez l'espace de votre chambre avec notre expertise en création de dressings sur mesure. Organisation et élégance garanties.</p>
+						<p class="card-text">Optimisez l’espace de votre chambre avec notre expertise en création de dressings sur mesure. Organisation et élégance garanties.</p>
 					</div>
 				</div>
 			</div>
@@ -251,11 +266,11 @@
 						<table class="table table-borderless m-0">
 							<tr>
 								<td class="text-end"><strong>Email :</strong></td>
-								<td class="text-center"><a href="mailto:contact@benoit-renove.fr" class="contact-link">contact@benoit-renove.fr</a></td>
+								<td class="text-center"><a href="mailto:<?php echo EMAIL; ?>" class="contact-link"><?php echo EMAIL; ?></a></td>
 							</tr>
 							<tr>
 								<td class="text-end"><strong>Téléphone :</strong></td>
-								<td class="text-center"><a href="tel:+33689386801" class="contact-link">06 89 38 68 01</a></td>
+								<td class="text-center"><a href="tel:<?php echo PHONE_NUMBER; ?>" class="contact-link phone_number"><?php echo PHONE_NUMBER; ?></a></td>
 							</tr>
 						</table>
 					</div>
@@ -301,9 +316,9 @@
 			</div>
 			<div class="col-md-6">
 				<div class="align-items-center justify-content-end">
-					<div class="mb-2"><span><i class="fas fa-map-marker-alt me-2 mb-2"></i>Secteur d'intervention : Béziers & alentours</span></div>
-					<div class="mb-2"><span class="me-4"><i class="fas fa-phone me-2"></i><a href="tel:+33689386801" class="text-light">06 89 38 68 01</a></span></div>
-					<div class="mb-2"><span><i class="fas fa-envelope me-2"></i><a href="mailto:contact@benoit-renove.fr" class="text-light">contact@benoit-renove.fr</a></span></div>
+					<div class="mb-2"><span><i class="fas fa-map-marker-alt me-2 mb-2"></i>Secteur d’intervention : Béziers & alentours</span></div>
+					<div class="mb-2"><span class="me-4"><i class="fas fa-phone me-2"></i><a href="tel:<?php echo PHONE_NUMBER; ?>" class="text-light phone_number"><?php echo PHONE_NUMBER; ?></a></span></div>
+					<div class="mb-2"><span><i class="fas fa-envelope me-2"></i><a href="mailto:<?php echo EMAIL; ?>" class="text-light"><?php echo EMAIL; ?></a></span></div>
 				</div>
 			</div>
 		</div>
@@ -311,16 +326,17 @@
 </footer>
 
 <script type="text/javascript">
-	var locale = 'fr-FR';
-	var timeZone = 'Europe/Paris';
-	var currency = 'EUR';
+	let locale = '<?php echo LOCALE; ?>';
+	let timeZone = '<?php echo TIMEZONE; ?>';
+	let currency = '<?php echo CURRENCY; ?>';
 </script>
 
 <!-- Liens vers les fichiers JavaScript de Bootstrap et jQuery -->
 <script src="bootstrap_5.3.1/js/bootstrap.bundle.min.js"></script>
 <script src="jquery_3.7.0/jquery-3.7.0.min.js"></script>
-<script src="fancybox/fancybox.umd.js"></script>
+<script src="fancybox_4.0.26/fancybox.umd.js"></script>
 <script src="image-compare-viewer_1.6.2/image-compare-viewer.min.js"></script>
+<script defer src="libphonenumber-js_1.10.149/libphonenumber-js.min.js"></script>
 
 <script src="app.js?<?php echo ACCESS_TOKEN; ?>"></script>
 
