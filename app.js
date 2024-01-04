@@ -22,9 +22,15 @@ $(function() {
 		return '';
 	}
 
+	function getHostOfUrl(url, withProtocol=true) {
+		url = new URL(url);
+		return (withProtocol ? url.protocol + '//' : '') + url.host;
+	}
+
 	// ---------- Formatage ----------
 
 	$('.phone_number').each((idx, el) => $(el).text(formatPhoneNumberNational($(el).text())));
+	$('.website_url').each((idx, el) => $(el).text(getHostOfUrl($(el).text())));
 
 	// ---------- Galerie ----------
 

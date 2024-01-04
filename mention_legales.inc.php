@@ -33,7 +33,7 @@
 <h5>Article 1 - Mentions légales</h5>
 <p class="subtitle">1.1 Site (ci-après « le site ») :</p>
 <p>Benoit Rénove</p>
-<p><a href="http://www.benoit-renove.fr">www.benoit-renove.fr</a></p>
+<p><a href="<?php echo WEBSITE_URL; ?>"><span class="website_url"><?php echo WEBSITE_URL; ?></span></a></p>
 
 <p class="subtitle">1.2 Éditeur (ci-après « l’éditeur ») :</p>
 <p>L’entreprise individuelle <strong><?php echo COMPANY_NAME; ?></strong></p>
