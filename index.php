@@ -2,6 +2,7 @@
 
 const COMPANY_NAME = 'Benoit Guiraudou';
 const PHONE_NUMBER = '+33689386801';
+const WEBSITE_URL = 'https://www.benoit-renove.fr';
 const EMAIL = 'contact@benoit-renove.fr';
 const POSTAL_ADDRESS = '24 avenue des Platanes — 34310 Montady — France';
 const SIRET = '809 644 941 00027';
@@ -13,6 +14,8 @@ date_default_timezone_set(TIMEZONE);
 ini_set('default_charset', "utf-8");
 define('ACCESS_TOKEN', strtotime('2023-11-16 11:00:00'));
 
+$canonicalUrl = WEBSITE_URL.parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,6 +26,8 @@ define('ACCESS_TOKEN', strtotime('2023-11-16 11:00:00'));
 	<title>Benoit Rénove - Bricolage et Rénovation</title>
 	<meta name="description" content="Prestation en rénovation intérieur de l'habitat : conception/montage de cuisine, pose de parquet et carrelage, enduit/peinture, création de dressing, rénovation de salle de bain, modifications/installations électriques, création de cloisons, isolation de pièce..." />
 	<meta name="keywords" content="renovation maison appartement cuisine béziers isolation placo peinture parquet carrelage électricité plomberie" />
+
+	<link rel="canonical" href="<?php echo $canonicalUrl; ?>" />
 
 	<!-- robots -->
 	<meta name="robots" content="all" />
