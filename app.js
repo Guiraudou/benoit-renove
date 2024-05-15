@@ -36,6 +36,8 @@ $(function() {
 
 	// Images de la galerie
 	const photos = [
+		{photo: ['IMG20240312143253.jpg', 'IMG20240326125449.jpg'], desc: 'Rénovation d’une cuisine', date: '2024-03-01'}, // Cuisine Jardin Convivial Béziers (Mars 2024)
+		{photo: ['IMG20240213093122.jpg', 'IMG20240229175059.jpg'], desc: 'Mise au norme d’un tableau électrique', date: '2024-02-01'}, // Mise au norme tableau électrique Murviel-les-Béziers (Février 2024)
 		{photo: ['IMG_20230822_150621.jpg', 'IMG_20230922_153119.jpg'], desc: 'Rénovation d’une cuisine', date: '2023-09-01'}, // Cuisine Chateau Paul Mas (Septembre 2023)
 		{photo: ['IMG_20230822_150545.jpg', 'IMG_20230922_153132.jpg'], desc: 'Rénovation d’une salle de bain', date: '2023-09-01'}, // Salle d'eau Chateau Paul Mas (Septembre 2023)
 		{photo: 'IMG_20230821_124810.jpg', desc: 'Rénovation d’une salle d’eau', date: '2023-08-01'}, // Salle d'eau Domancy (Août 2023)

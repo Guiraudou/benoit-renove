@@ -12,7 +12,7 @@ const CURRENCY = 'EUR';
 
 date_default_timezone_set(TIMEZONE);
 ini_set('default_charset', "utf-8");
-define('ACCESS_TOKEN', strtotime('2023-11-16 11:00:00'));
+define('ACCESS_TOKEN', strtotime('2024-05-15 23:04:00'));
 
 $canonicalUrl = WEBSITE_URL.parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
 
