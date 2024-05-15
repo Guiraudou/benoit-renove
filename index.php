@@ -315,7 +315,7 @@ $canonicalUrl = WEBSITE_URL.parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
 					Benoit Rénove
 				</div>
 				<div class="copyright">
-					<span>&copy; 2023 Benoit Rénove. Tous droits réservés.</span><br>
+					<span>&copy; <?php echo date('Y'); ?> Benoit Rénove. Tous droits réservés.</span><br>
 					<a href="#legal_modal" data-bs-toggle="modal" class="text-light">Mentions Légales</a>
 				</div>
 			</div>
