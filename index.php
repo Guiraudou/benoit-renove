@@ -1,7 +1,7 @@
 <?php
 
 const COMPANY_NAME = 'Benoit Guiraudou';
-const PHONE_NUMBER = '+33689386801';
+const PHONE_NUMBER = '+33768773061';
 const WEBSITE_URL = 'https://www.benoit-renove.fr';
 const EMAIL = 'contact@benoit-renove.fr';
 const POSTAL_ADDRESS = '24 avenue des Platanes — 34310 Montady — France';
