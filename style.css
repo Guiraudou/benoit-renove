@@ -1,12 +1,22 @@
 body {
 	font-family: 'Roboto', sans-serif;
-	background-image: url('images/white-wooden-textures.jpg');
+	font-size: large;
+	/*background-image: url('images/white-wooden-textures.jpg');
 	background-size: cover;
 	background-repeat: repeat;
 	background-attachment: fixed;
-	background-color: rgba(0, 0, 0, 0.2); /* Ajouter une teinte mate */
+	background-color: rgba(0, 0, 0, 0.2); */
+	background-color: #122b4f;
 	opacity: 0.9; /* Réduire le contraste */
 }
+
+h2 {
+	margin-bottom: 1.5rem;
+}
+h2.white {
+	color: #ffffff;
+}
+
 .navbar {
 	background: none;
 	color: #122b4f;
@@ -23,22 +33,24 @@ body {
 	color: #122b4f !important;
 	font-weight: bold;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 30px;
+	font-size: xx-large;
 	padding-top: 4px;
 }
 
 .nav-link {
 	font-weight: bold;
-	font-size: 20px;
+	font-size: x-large;
+	padding-left: 15px;
+	padding-right: 15px;
 	color: #122b4f !important;
 }
 .nav-link:hover {
 	text-decoration: underline;
-	color: #773617 !important;
+	/*color: #773617 !important;*/
 }
 
 .lead {
-	font-size: 2rem;
+	font-size: xx-large;
 	font-weight: 400;
 }
 
@@ -52,7 +64,8 @@ body {
 }
 
 .bg-dark {
-	background-color: #122b4f !important;
+	background-color: #1a1d20 !important;
+	/*background-color: #122b4f !important;*/
 }
 
 .text-white {
@@ -80,14 +93,23 @@ body {
 	text-align: justify;
 }
 
+table.table {
+	vertical-align: middle;
+}
+
 body .page_start {
-	background: url("images/home-min.jpg") no-repeat center;
+	/*background: url("images/home-min.jpg") no-repeat center;*/
+	background: url("images/home_elec2.jpg") no-repeat center;
 	background-size: cover;
-	box-shadow: 0px -20px 49px 5px #999999;
+	/*box-shadow: 0px -20px 49px 5px #999999;*/
 }
 #home {
-	padding-top: 5rem!important;
-	padding-bottom: 6rem!important;
+	padding-top: 1rem!important;
+	padding-bottom: 7rem!important;
+}
+
+#contact {
+	background: #122b4f;
 }
 
 /* Ajouter des styles aux liens de contact */

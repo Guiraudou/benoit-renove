@@ -68,7 +68,7 @@ $canonicalUrl = WEBSITE_URL.parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
 
 <div class="page_start">
 	<!-- Navigation -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark2 p-1">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark2 p-1 pt-3 pb-3">
 		<div class="container">
 			<a class="navbar-brand p-0 d-flex align-items-center ms-auto" href="#">
 				<img src="images/logo.png" alt="Logo Benoit Rénove" class="img-fluid me-2" width="70px">
@@ -101,8 +101,8 @@ $canonicalUrl = WEBSITE_URL.parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
 		<div class="container">
 			<img src="images/logo.png" alt="Logo Benoit Rénove" class="img-fluid mb-4" width="150">
 			<!--<h1 class="display-4 mb-2">Bienvenue chez Benoit Rénove</h1>-->
-			<h1 class="display-4 mb-2">Benoit Rénove - Béziers</h1>
-			<p class="lead mb-5"><strong>Votre partenaire pour vos projets de rénovation sur Béziers et alentours.</strong></p>
+			<h1 class="display-4 mb-2">Électricité générale</h1>
+			<p class="lead mb-5"><strong>Artisan électricien sur Béziers et alentours</strong></p>
 			<a href="#contact" class="btn btn-primary btn-lg mt-4">Me contacter</a>
 		</div>
 		<!-- Image d'illustration pour la page principale -->
@@ -112,110 +112,61 @@ $canonicalUrl = WEBSITE_URL.parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
 	</section>
 </div>
 
+<?php
+
+$prestationsOld = [
+	['Montage de Cuisine', 'fa-utensils', 'Spécialisé dans le montage de cuisines sur mesure. Confiez-nous votre projet pour une cuisine fonctionnelle et esthétique.'],
+	['Enduit / Peinture', 'fa-paint-roller', 'Donnez vie à vos murs avec notre expertise en enduit et peinture. Des finitions impeccables pour une ambiance qui vous ressemble.'],
+	['Pose de Parquet / Carrelage', 'fa-th', 'Apportez chaleur et élégance à vos espaces avec notre expertise en pose de parquet et carrelage. Divers matériaux et motifs disponibles.'],
+	['Changement Lavabo / Robinetterie', 'fa-sink', 'Modernisez votre salle de bains avec nos services de changement de lavabo et robinetterie. Une solution élégante pour un espace fonctionnel.'],
+	['Création de Dressing', 'fa-tshirt', 'Optimisez l’espace de votre chambre avec notre expertise en création de dressings sur mesure. Organisation et élégance garanties.'],
+	['Changement Radiateur / Prises', 'fa-bolt', 'Modernisez vos installations électriques en changeant radiateurs, prises de courant et interrupteurs. Sécurité et confort améliorés.'],
+	['Jardinage', 'fa-leaf', 'Embellissez vos extérieurs avec notre service de jardinage. Entretien, aménagement et création de jardins sur mesure.'],
+	['Montage de Meubles', 'fa-tools', 'Profitez de vos nouveaux meubles sans le stress du montage. Nous nous occupons du montage pour vous, rapidement et efficacement.'],
+	['Placo / Isolation', 'fa-hammer', 'Ré-agencement de pièces, création de cloison, isolation de mur, création de sous-plafond, ouverture de mur, création de cuisine américaine, etc.'],
+];
+
+$prestations = [
+	['Installation neuve', 'fa-home', ''],
+	['Remise aux normes', 'fa-clipboard-check', ''],
+	['Dépannage / Réparation', 'fa-times-circle', ''],
+	['Tableaux électriques', 'fa-th', ''],
+	['Ajout / Déplacement appareillages', 'fa-plug', ''],
+	['Remplacement appareillage', 'fa-sync', ''],
+	['Rénovation complète', 'fa-tools', ''],
+	['Tableau piscine', 'fa-swimming-pool', ''],
+	['Prise véhicule électrique', 'fa-car', ''],
+];
+
+?>
 <!-- Services -->
 <section id="services" class="py-5">
 	<div class="container">
-		<h2 class="text-center">Prestations</h2>
+		<h2 class="text-center white">Prestations</h2>
 		<div class="row">
-			<div class="col-md-4">
-				<div class="card mb-4">
-					<div class="text-center mt-3">
-						<i class="fas fa-utensils fa-3x"></i> <!-- Logo pour Montage de cuisine -->
+			<?php foreach ($prestations as [$title, $icon, $desc]) : ?>
+				<?php /*<div class="col-md-4">
+					<div class="card mb-4">
+						<div class="text-center mt-3">
+							<i class="fas <?php echo $icon; ?> fa-3x"></i>
+						</div>
+						<div class="card-body">
+							<h5 class="card-title text-center"><?php echo $title; ?></h5>
+							<p class="card-text"><?php echo $desc; ?></p>
+						</div>
 					</div>
-					<div class="card-body">
-						<h5 class="card-title text-center">Montage de Cuisine</h5>
-						<p class="card-text">Nous sommes spécialisés dans le montage de cuisines sur mesure. Confiez-nous votre projet pour une cuisine fonctionnelle et esthétique.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="card mb-4">
-					<div class="text-center mt-3">
-						<i class="fas fa-paint-roller fa-3x"></i> <!-- Logo pour Enduit/Peinture -->
-					</div>
-					<div class="card-body">
-						<h5 class="card-title text-center">Enduit / Peinture</h5>
-						<p class="card-text">Donnez vie à vos murs avec notre expertise en enduit et peinture. Des finitions impeccables pour une ambiance qui vous ressemble.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="card mb-4">
-					<div class="text-center mt-3">
-						<i class="fas fa-th fa-3x"></i> <!-- Logo pour Pose de parquet -->
-					</div>
-					<div class="card-body">
-						<h5 class="card-title text-center">Pose de Parquet / Carrelage</h5>
-						<p class="card-text">Apportez chaleur et élégance à vos espaces avec notre expertise en pose de parquet et carrelage. Divers matériaux et motifs disponibles.</p>
+				</div> */ ?>
+				<div class="col-md-4">
+					<div class="card mb-4">
+						<div class="text-center mt-3">
+							<i class="fas <?php echo $icon; ?> fa-3x"></i>
+						</div>
+						<div class="card-body">
+							<h5 class="card-title text-center"><?php echo $title; ?></h5>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="card mb-4">
-					<div class="text-center mt-3">
-						<i class="fas fa-sink fa-3x"></i> <!-- Logo pour Changement lavabo -->
-					</div>
-					<div class="card-body">
-						<h5 class="card-title text-center">Changement Lavabo / Robinetterie</h5>
-						<p class="card-text">Modernisez votre salle de bains avec nos services de changement de lavabo et robinetterie. Une solution élégante pour un espace fonctionnel.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="card mb-4">
-					<div class="text-center mt-3">
-						<i class="fas fa-tshirt fa-3x"></i> <!-- Logo pour Création de dressing -->
-					</div>
-					<div class="card-body">
-						<h5 class="card-title text-center">Création de Dressing</h5>
-						<p class="card-text">Optimisez l’espace de votre chambre avec notre expertise en création de dressings sur mesure. Organisation et élégance garanties.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="card mb-4">
-					<div class="text-center mt-3">
-						<i class="fas fa-bolt fa-3x"></i> <!-- Logo pour Changement radiateur / prises -->
-					</div>
-					<div class="card-body">
-						<h5 class="card-title text-center">Changement Radiateur / Prises</h5>
-						<p class="card-text">Modernisez vos installations électriques en changeant radiateurs, prises de courant et interrupteurs. Sécurité et confort améliorés.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="card mb-4">
-					<div class="text-center mt-3">
-						<i class="fas fa-leaf fa-3x"></i> <!-- Logo pour Jardinage -->
-					</div>
-					<div class="card-body">
-						<h5 class="card-title text-center">Jardinage</h5>
-						<p class="card-text">Embellissez vos extérieurs avec notre service de jardinage. Entretien, aménagement et création de jardins sur mesure.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="card mb-4">
-					<div class="text-center mt-3">
-						<i class="fas fa-tools fa-3x"></i> <!-- Logo pour Montage de meubles -->
-					</div>
-					<div class="card-body">
-						<h5 class="card-title text-center">Montage de Meubles</h5>
-						<p class="card-text">Profitez de vos nouveaux meubles sans le stress du montage. Nous nous occupons du montage pour vous, rapidement et efficacement.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="card mb-4">
-					<div class="text-center mt-3">
-						<i class="fas fa-hammer fa-3x"></i> <!-- Logo pour Montage de meubles -->
-					</div>
-					<div class="card-body">
-						<h5 class="card-title text-center">Placo / Isolation</h5>
-						<p class="card-text">Ré-agencement de pièces, création de cloison, isolation de mur, création de sous-plafond, ouverture de mur, création de cuisine américaine, etc.</p>
-					</div>
-				</div>
-			</div>
+			<?php endforeach ?>
 		</div>
 	</div>
 </section>
@@ -223,7 +174,7 @@ $canonicalUrl = WEBSITE_URL.parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
 <!-- Galerie -->
 <section id="gallery" class="py-5 bg-light">
 	<div class="container">
-		<h2 class="text-center mb-4" style="font-family: 'Montserrat', sans-serif;">Galerie</h2>
+		<h2 class="text-center">Galerie</h2>
 
 		<?php /* <div class="before_after_container">
 			<div class="img background-img"><img src="https://i.imgur.com/s08MkXC.jpg" alt=""></div>
@@ -262,7 +213,7 @@ $canonicalUrl = WEBSITE_URL.parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
 <!-- Contact -->
 <section id="contact" class="py-5">
 	<div class="container">
-		<h2 class="text-center">Contact</h2>
+		<h2 class="text-center white">Contact</h2>
 		<div class="row">
 			<div class="col-md-6 mx-auto">
 				<div class="card p-4">
@@ -271,11 +222,11 @@ $canonicalUrl = WEBSITE_URL.parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
 						<table class="table table-borderless m-0">
 							<tr>
 								<td class="text-end"><strong>Email :</strong></td>
-								<td class="text-center"><a href="mailto:<?php echo EMAIL; ?>" class="contact-link"><?php echo EMAIL; ?></a></td>
+								<td class="text-center fs-4"><a href="mailto:<?php echo EMAIL; ?>" class="contact-link"><?php echo EMAIL; ?></a></td>
 							</tr>
 							<tr>
 								<td class="text-end"><strong>Téléphone :</strong></td>
-								<td class="text-center"><a href="tel:<?php echo PHONE_NUMBER; ?>" class="contact-link phone_number"><?php echo PHONE_NUMBER; ?></a></td>
+								<td class="text-center fs-4"><a href="tel:<?php echo PHONE_NUMBER; ?>" class="contact-link phone_number"><?php echo PHONE_NUMBER; ?></a></td>
 							</tr>
 						</table>
 					</div>
@@ -321,9 +272,10 @@ $canonicalUrl = WEBSITE_URL.parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
 			</div>
 			<div class="col-md-6">
 				<div class="align-items-center justify-content-end">
-					<div class="mb-2"><span><i class="fas fa-map-marker-alt me-2 mb-2"></i>Secteur d’intervention : Béziers & alentours</span></div>
+					<div class="mb-2"><span><i class="fas fa-map-marker-alt me-2"></i>Secteur d’intervention : Béziers & alentours</span></div>
 					<div class="mb-2"><span class="me-4"><i class="fas fa-phone me-2"></i><a href="tel:<?php echo PHONE_NUMBER; ?>" class="text-light phone_number"><?php echo PHONE_NUMBER; ?></a></span></div>
 					<div class="mb-2"><span><i class="fas fa-envelope me-2"></i><a href="mailto:<?php echo EMAIL; ?>" class="text-light"><?php echo EMAIL; ?></a></span></div>
+					<div class="mb-2"><span><i class="fas fa-shield-alt me-2"></i>Garantie décennale</span></div>
 				</div>
 			</div>
 		</div>
