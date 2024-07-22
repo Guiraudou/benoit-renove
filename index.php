@@ -42,10 +42,10 @@ $canonicalUrl = WEBSITE_URL.parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
 	<!-- preconnect -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 
-	<link rel="stylesheet" href="bootstrap_5.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="lib/bootstrap_5.3.3/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-	<link rel="stylesheet" href="fancybox_4.0.26/fancybox.css">
-	<link rel="stylesheet" href="image-compare-viewer_1.6.2/image-compare-viewer.min.css">
+	<link rel="stylesheet" href="lib/fancybox_4.0.26/fancybox.css">
+	<link rel="stylesheet" href="lib/image-compare-viewer_1.6.2/image-compare-viewer.min.css">
 	<link rel="stylesheet" href="style.css?<?php echo ACCESS_TOKEN; ?>">
 
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -289,11 +289,11 @@ $prestations = [
 </script>
 
 <!-- Liens vers les fichiers JavaScript de Bootstrap et jQuery -->
-<script src="bootstrap_5.3.1/js/bootstrap.bundle.min.js"></script>
-<script src="jquery_3.7.0/jquery-3.7.0.min.js"></script>
-<script src="fancybox_4.0.26/fancybox.umd.js"></script>
-<script src="image-compare-viewer_1.6.2/image-compare-viewer.min.js"></script>
-<script defer src="libphonenumber-js_1.10.149/libphonenumber-js.min.js"></script>
+<script src="lib/bootstrap_5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="lib/jquery_3.7.1/jquery-3.7.1.min.js"></script>
+<script src="lib/fancybox_4.0.26/fancybox.umd.js"></script>
+<script src="lib/image-compare-viewer_1.6.2/image-compare-viewer.min.js"></script>
+<script defer src="lib/libphonenumber-js_1.11.1/libphonenumber-js.min.js"></script>
 
 <script src="app.js?<?php echo ACCESS_TOKEN; ?>"></script>
 

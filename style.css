@@ -99,7 +99,7 @@ table.table {
 
 body .page_start {
 	/*background: url("images/home-min.jpg") no-repeat center;*/
-	background: url("images/home_elec2.jpg") no-repeat center;
+	background: url("images/home/home_elec2_min.jpg") no-repeat center;
 	background-size: cover;
 	/*box-shadow: 0px -20px 49px 5px #999999;*/
 }
