@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+REV:2024-09-24T15:16:02Z
+N;CHARSET=utf-8:Guiraudou;Benoit;;;
+FN;CHARSET=utf-8:Benoit Guiraudou
+ADR;TYPE=WORK;CHARSET=utf-8:;;24 avenue des Platanes;Montady;;34310;Fr
+ ance
+EMAIL;TYPE=WORK:contact@benoit-renove.fr
+TEL;TYPE=CELL:+33768773061
+ORG;CHARSET=utf-8:Benoit Rénove;
+TITLE;CHARSET=utf-8:Artisan électricien
+URL:https://www.benoit-renove.fr
+END:VCARD
