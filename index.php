@@ -12,7 +12,7 @@ const CURRENCY = 'EUR';
 
 date_default_timezone_set(TIMEZONE);
 ini_set('default_charset', "utf-8");
-define('ACCESS_TOKEN', strtotime('2024-05-15 23:04:00'));
+define('ACCESS_TOKEN', strtotime('2024-09-29 10:01:00'));
 
 $canonicalUrl = WEBSITE_URL.parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
 
@@ -99,9 +99,9 @@ $canonicalUrl = WEBSITE_URL.parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
 	<!-- Accueil -->
 	<section id="home" class="py-5 text-center">
 		<div class="container">
-			<img src="images/logo.png" alt="Logo Benoit Rénove" class="img-fluid mb-4" width="150">
+			<img src="images/logo.png" alt="Logo Benoit Rénove" class="img-fluid mb-4" width="160">
 			<!--<h1 class="display-4 mb-2">Bienvenue chez Benoit Rénove</h1>-->
-			<h1 class="display-4 mb-2">Électricité générale</h1>
+			<h1 class="display-3 mb-2">Électricité générale</h1>
 			<p class="lead mb-5"><strong>Artisan électricien sur Béziers et alentours</strong></p>
 			<a href="#contact" class="btn btn-primary btn-lg mt-4">Me contacter</a>
 		</div>
