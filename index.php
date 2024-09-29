@@ -215,23 +215,32 @@ $prestations = [
 	<div class="container">
 		<h2 class="text-center white">Contact</h2>
 		<div class="row">
-			<div class="col-md-6 mx-auto">
-				<div class="card p-4">
+			<div class="col-md-8 mx-auto">
+				<div class="card">
 					<div class="card-body">
-						<h5 class="text-center mb-3">Contactez-moi pour toute question, pour expliquer votre projet ou pour obtenir un devis gratuitement.</h5>
-						<table class="table table-borderless m-0">
-							<tr>
-								<td class="text-end"><strong>Email :</strong></td>
-								<td class="text-center fs-4"><a href="mailto:<?php echo EMAIL; ?>" class="contact-link"><?php echo EMAIL; ?></a></td>
-							</tr>
-							<tr>
-								<td class="text-end"><strong>Téléphone :</strong></td>
-								<td class="text-center fs-4"><a href="tel:<?php echo PHONE_NUMBER; ?>" class="contact-link phone_number"><?php echo PHONE_NUMBER; ?></a></td>
-							</tr>
-						</table>
+						<div class="row">
+							<div class="col-md-8">
+								<h5 class="text-center mt-3 mb-3">Contactez-moi pour toute question, pour expliquer votre projet ou pour obtenir un devis gratuitement.</h5>
+								<table class="table table-borderless m-0">
+									<tr>
+										<td class="text-end"><strong>Email :</strong></td>
+										<td class="text-center fs-4"><a href="mailto:<?php echo EMAIL; ?>" class="contact-link"><?php echo EMAIL; ?></a></td>
+									</tr>
+									<tr>
+										<td class="text-end"><strong>Téléphone :</strong></td>
+										<td class="text-center fs-4"><a href="tel:<?php echo PHONE_NUMBER; ?>" class="contact-link phone_number"><?php echo PHONE_NUMBER; ?></a></td>
+									</tr>
+								</table>
+							</div>
+
+							<div class="col-md-4">
+								<img src="images/qrcode.png" alt="" class="rounded float-end" style="max-height: 200px">
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
+
 		</div>
 	</div>
 </section>
